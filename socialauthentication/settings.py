@@ -77,3 +77,17 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
+AUTHENTICATION_BACKENDS = (
+    # Facebook
+    'social.backends.facebook.FacebookOAuth2',
+
+    # Django
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+# Facebook Keys
+SOCIAL_AUTH_FACEBOOK_KEY = os.getenv('AUTH_FACEBOOK_ID')
+SOCIAL_AUTH_FACEBOOK_SECRET = os.getenv('AUTH_FACEBOOK_SECRET')
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = "/"
