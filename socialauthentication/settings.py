@@ -85,6 +85,9 @@ AUTHENTICATION_BACKENDS = (
     # Twitter
     'social.backends.twitter.TwitterOAuth',
 
+    # Github
+    'social.backends.github.GithubOAuth2',
+
     # Django
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -96,5 +99,9 @@ SOCIAL_AUTH_FACEBOOK_SECRET = os.getenv('AUTH_FACEBOOK_SECRET')
 # Twitter Keys
 SOCIAL_AUTH_TWITTER_KEY = os.getenv('AUTH_TWITTER_KEY')
 SOCIAL_AUTH_TWITTER_SECRET = os.getenv('AUTH_TWITTER_SECRET')
+
+# Github Keys
+SOCIAL_AUTH_GITHUB_KEY = os.getenv('AUTH_GITHUB_KEY')
+SOCIAL_AUTH_GITHUB_SECRET = os.getenv('AUTH_GITHUB_SECRET')
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = "/"
