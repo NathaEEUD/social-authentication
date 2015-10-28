@@ -82,6 +82,9 @@ AUTHENTICATION_BACKENDS = (
     # Facebook
     'social.backends.facebook.FacebookOAuth2',
 
+    # Twitter
+    'social.backends.twitter.TwitterOAuth',
+
     # Django
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -89,5 +92,9 @@ AUTHENTICATION_BACKENDS = (
 # Facebook Keys
 SOCIAL_AUTH_FACEBOOK_KEY = os.getenv('AUTH_FACEBOOK_ID')
 SOCIAL_AUTH_FACEBOOK_SECRET = os.getenv('AUTH_FACEBOOK_SECRET')
+
+# Twitter Keys
+SOCIAL_AUTH_TWITTER_KEY = os.getenv('AUTH_TWITTER_KEY')
+SOCIAL_AUTH_TWITTER_SECRET = os.getenv('AUTH_TWITTER_SECRET')
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = "/"
