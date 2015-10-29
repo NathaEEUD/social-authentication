@@ -17,3 +17,7 @@ In this repo you'll find the source code of a tutorial posted for me in [Platzi.
 	```$ python manage.py runserver```
 
 * Enjoy!
+
+## Demo
+
+Try a demo [here](http://socialauthentication.herokuapp.com/)
