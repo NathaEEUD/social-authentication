@@ -1,4 +1,8 @@
-"""Project settings."""
+"""Project settings.
+
+Version: 1.0
+Author: Pablo Trinidad
+"""
 
 import os
 
